@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+      <meta charset="UTF-8">
+      <title>Gallery</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+<body>
+  <header>
+
+    <style>
+      img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 0px;
+      }
+    </style>
+
+      <nav>
+        <a href="index.html" class="logo">
+          <div class="logo">
+              <img src="logo2.png">
+          </div>
+        </a>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="food.html">Food and Drinks</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section id="gallery">
+            <div class="content">
+                <h5>Gallerie</h5>
+                <p style="line-height: 90%;">Unser persönliches, kleines Fotoalbum mit allen bisherigen Events, kommenden Events<br></br>
+                und tollen vietnamesischen Gerichten und hausgemachten Getränken.</p>
+            </div>
+        </section>
+      </main>
+
+
+
+        <style>
+
+        .pics {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 30px;
+          box-sizing: border-box;
+          background-color: lightpink;
+        }
+
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 10px;
+        }
+
+        .image {
+          position: relative;
+          width: 100%;
+        }
+
+        .image img {
+          width: 100%;
+          height: auto;
+        }
+
+        .image .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .image:hover .overlay {
+          opacity: 1;
+        }
+
+        .image .overlay-text {
+          color: #FFF;
+          font-size: 14px;
+          text-align: center;
+          padding: 30px;
+        }
+      </style>
+
+
+
+      <div class="pics">
+    <div class="gallery">
+      <div class="image">
+        <img src="festival_berlin.jpeg">
+        <div class="overlay">
+          <div class="overlay-text">
+            Erleben Sie das Beste der vietnamesischen Küche auf unserem kommenden Food Truck Festival in Berlin!
+            Begleiten Sie uns auf eine köstliche Reise durch die pulsierenden Aromen
+            und aromatischen Köstlichkeiten Vietnams.<br></br>
+            Lassen Sie sich dieses köstliche Fest nicht entgehen!</div>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="grapefruit_Lemonade.jpeg">
+        <div class="overlay">
+          <div class="overlay-text">
+            Wir glauben an die Verwendung der feinsten und saftigsten Grapefruits,
+            um ein Getränk zu kreieren, das sowohl belebend als auch aufmunternd ist.
+            Jeder Schluck trägt die belebende Kraft der Natur in sich und sorgt für einen Hauch
+            von Lebensfreude und Vitalität.</div>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="Lemon_Lemonade.jpeg">
+        <div class="overlay">
+          <div class="overlay-text">
+            Unsere Philosophie beruht auf der Überzeugung, dass Einfachheit die
+            ultimative Form der Raffinesse ist. Wir streben danach, eine hausgemachte
+            Zitronenlimonade zu kreieren, die die Essenz der reinen Erfrischung einfängt.
+            Indem wir nur die besten Zitronen und einen Hauch von Süße verwenden,
+            lassen wir die natürlichen Aromen durchscheinen.</div>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="festival_karlsruhe.jpeg">
+        <div class="overlay">
+          <div class="overlay-text">
+            Erleben Sie mit uns ein verlockendes vietnamesisches Food Truck Festival in Karlsruhe!
+            Erleben Sie die lebendigen Geschmäcker, aromatischen Gewürze und
+            kulturellen Köstlichkeiten Vietnams mitten in der Stadt.</div>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="Hong Doung.jpg">
+        <div class="overlay">
+          <div class="overlay-text">
+            Unsere Philosophie ist es, Pho zu kreieren, die die Essenz von Komfort und Ernährung verkörpert.
+            Wir glauben an die Verwendung von Zutaten höchster Qualität, die wir langsam köcheln lassen,
+            um reiche Geschmacksnoten und Aromen zu erhalten. Unser Ziel ist es, eine Schüssel Pho zu servieren,
+            die nicht nur Ihre Geschmacksnerven befriedigt, sondern auch Ihre Seele wärmt.</div>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="Rau Moung.jpg">
+        <div class="overlay">
+          <div class="overlay-text">
+            Bei jedem Wokgericht bemühen wir uns um ein perfektes Gleichgewicht von Texturen und Geschmäckern,
+            um das Gericht mit einer Symphonie aus herzhaften, süßen und umami-Aromen zu erfüllen.
+            Unsere Philosophie ist es, die Tradition des Wok-Kochens zu würdigen,
+            die dafür erforderliche Kunstfertigkeit und Präzision zu zeigen und gleichzeitig die
+            natürlichen Vorzüge der einzelnen Zutaten hervorzuheben.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <p class="footer-text">
+              <a href="impressum.html">Impressum</a>
+            </p>
+            <p class="footer-text">VietAroma</p>
+            <p class="footer-text">Vogelstraße 1, Karlsruhe, Deutschland</p>
+            <p class="footer-text">Tel: +49 706-848-9876</p>
+            <p class="footer-text">Email: 3006248Blarina@gmail.com</p>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
